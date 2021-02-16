@@ -92,28 +92,6 @@ void setdefaultvideomode(void)
 
 }
 
-/*
-  repeat with w = 3 to 50
-      repeat with i = 1 to 12
-         repeat with j = 0 to 12
-            put i + j into k
-            put round((j + j + j) / (i + 3) + i*w / 12) into t_color
-            if t_color > 15 then
-               put randomInRange (1,15) into t_color
-            end if
-            Plot i,k,t_color,1
-            Plot k,i,t_color,1
-            Plot 40-i,25-k,t_color,1
-            Plot 40-k,25-i,t_color,1
-            Plot k,25-i,t_color,1
-            Plot 40-i,k,t_color,1
-            Plot i,25-k,t_color,1
-            Plot 40-k,i,t_color,1
-         end repeat
-      end repeat
-   end repeat
-*/
-
 void butterfly(void) 
 {
     unsigned int c, w, i ,j, k;
